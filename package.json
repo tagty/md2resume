@@ -1,0 +1,41 @@
+{
+  "name": "md2resume",
+  "version": "1.0.0",
+  "description": "Convert Markdown resume to professional PDF",
+  "main": "dist/convert.js",
+  "bin": {
+    "md2resume": "./dist/bin/md2resume.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/tagty/md2resume.git"
+  },
+  "keywords": [
+    "resume",
+    "markdown",
+    "pdf",
+    "職務経歴書"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/tagty/md2resume/issues"
+  },
+  "homepage": "https://github.com/tagty/md2resume#readme",
+  "dependencies": {
+    "commander": "^14.0.2",
+    "marked": "^17.0.1",
+    "puppeteer": "^24.33.0"
+  },
+  "devDependencies": {
+    "@types/marked": "^5.0.2",
+    "@types/node": "^25.0.1",
+    "typescript": "^5.9.3"
+  }
+}
