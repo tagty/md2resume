@@ -8,15 +8,15 @@
 
 body {
   font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  font-size: 10pt;
-  line-height: 1.7;
+  font-size: 9pt;
+  line-height: 1.5;
   color: #1a1a1a;
   background: white;
 }
 
 /* 見出しスタイル */
 h1 {
-  font-size: 24pt;
+  font-size: 20pt;
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 8px;
@@ -25,7 +25,7 @@ h1 {
 }
 
 h2 {
-  font-size: 16pt;
+  font-size: 14pt;
   font-weight: 700;
   color: #1a1a1a;
   margin-top: 24px;
@@ -35,7 +35,7 @@ h2 {
 }
 
 h3 {
-  font-size: 13pt;
+  font-size: 11pt;
   font-weight: 700;
   color: #374151;
   margin-top: 16px;
@@ -45,27 +45,11 @@ h3 {
 }
 
 h4 {
-  font-size: 11pt;
+  font-size: 10pt;
   font-weight: 600;
   color: #4b5563;
   margin-top: 12px;
   margin-bottom: 6px;
-}
-
-h5 {
-  font-size: 10.5pt;
-  font-weight: 600;
-  color: #374151;
-  margin-top: 10px;
-  margin-bottom: 4px;
-}
-
-h6 {
-  font-size: 10pt;
-  font-weight: 600;
-  color: #4b5563;
-  margin-top: 8px;
-  margin-bottom: 4px;
 }
 
 /* 段落 */
@@ -76,7 +60,7 @@ p {
 
 /* 箇条書き */
 ul, ol {
-  margin-left: 20px;
+  margin-left: 10px;
   margin-bottom: 12px;
 }
 
@@ -86,7 +70,7 @@ ul {
 
 ul li {
   position: relative;
-  padding-left: 20px;
+  padding-left: 15px;
   margin-bottom: 6px;
 }
 
@@ -111,7 +95,7 @@ ol li {
 ul ul, ol ul, ul ol, ol ol {
   margin-top: 6px;
   margin-bottom: 6px;
-  margin-left: 20px;
+  margin-left: 8px;
 }
 
 ul ul li::before {
@@ -133,7 +117,7 @@ em {
 /* コード */
 code {
   font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
-  font-size: 9pt;
+  font-size: 8pt;
   background-color: #f3f4f6;
   padding: 2px 6px;
   border-radius: 3px;
@@ -160,7 +144,7 @@ table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 16px;
-  font-size: 9.5pt;
+  font-size: 8.5pt;
 }
 
 table thead {
@@ -218,7 +202,7 @@ blockquote {
 /* 印刷用の最適化 */
 @media print {
   body {
-    font-size: 10pt;
+    font-size: 9pt;
   }
 
   h1 {
@@ -253,7 +237,7 @@ section {
 }
 
 .text-small {
-  font-size: 9pt;
+  font-size: 8pt;
 }
 
 .mb-0 {
@@ -262,4 +246,8 @@ section {
 
 .mt-0 {
   margin-top: 0;
+}
+
+.page-break {
+  page-break-after: always;
 }
